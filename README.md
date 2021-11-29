@@ -1,4 +1,4 @@
-# Flag search 💥
+# Flag search 🏴‍☠️
 
 This repo is another one of my React projects. It displays a list of all countries coming from an API and it is rendered using React. 
 
