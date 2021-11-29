@@ -2,7 +2,10 @@ import React from 'react'
 
 export default function Card(props) {
   const { country } = props
-  console.log(country)
+
+  const popFormatting = x => {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
+  }
 
   return (
     <li className="card">
@@ -11,7 +14,7 @@ export default function Card(props) {
         <ul>
           <li>{country.name}</li>
           <li>{country.capital}</li>
-          <li>Pop: {country.population}</li>
+          <li>Pop: {popFormatting(country.population)}</li>
         </ul>
       </div>
     </li>
